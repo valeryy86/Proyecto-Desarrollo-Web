@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: rgb(243, 155, 209);
+    justify-content:space-between ;
+    border-radius: 0 0 10px 10px;
+
+}
+.logo img {
+    height: 70px;
+    margin: 20px;
+    border-radius: 50px;
+}
+.flex-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin: 40px;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
