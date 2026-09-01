@@ -13,7 +13,7 @@ body {
 .navbar{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    background-color: rgb(243, 155, 209);
+    background-color: rgb(253, 250, 252);
     align-items: center; /* Centra verticalmente todos los elementos */
     padding: 10px 40px;
     border-radius: 0 0 10px 10px;
@@ -39,7 +39,7 @@ body {
     gap: 40px;
 }
 .nav-links a {
-    color: white;
+    color: #ff97bd;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -48,9 +48,51 @@ body {
 
 .nav-links a:hover {
     opacity: 0.8;
-    color:antiquewhite;
+    color:#f35c93;
 }
 
+.banner{
+    position: relative;
+    height: 530px;
+    width: 100%;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cont-banner{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    text-align: center;
+    font-size: 20px;
+    transform: translateY(-50%)
+}
+
+.boton-banner{
+    background-color: white;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff97bd;
+    padding: 10px 10px 15px 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow:2px 2px 5px #ff97bd ;
+
+}
+.boton-banner:hover {
+    background-color: #ff97bd;
+    color: white;
+    box-shadow:2px 2px 5px white ;
+    transform: scale(1.05);
+    padding: 12px 12px 17px 12px;
+
+}
+.cont-banner h1, .cont-banner p{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px #ff97bd;
+}
 
 @media (max-width: 650px) {
     .navbar {
@@ -70,4 +112,26 @@ body {
         flex-wrap: wrap; /* Permite que los enlaces bajen de línea si la pantalla es muy estrecha */
         justify-content: center;
     }
+    @media (max-width: 650px) {
+    /* Ajustes anteriores de tu navbar van aquí... */
+
+    .banner {
+        height: 380px; /* Reducimos la altura para pantallas pequeñas */
+    }
+
+    .cont-banner {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); /* Centra el contenido en el medio exacto del celular */
+        width: 90%; /* Aprovecha casi todo el ancho disponible */
+    }
+
+    .cont-banner h1 {
+        font-size: 1.8rem; /* Tamaño de título cómodo para pantallas pequeñas */
+    }
+
+    .cont-banner p {
+        font-size: 0.95rem;
+    }
+}
 }
