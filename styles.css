@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    padding: 100px 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -17,7 +21,11 @@ body {
     align-items: center; /* Centra verticalmente todos los elementos */
     padding: 10px 40px;
     border-radius: 0 0 10px 10px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .logo {
     display: flex;
@@ -94,6 +102,51 @@ body {
     text-shadow: 2px 2px 5px #ff97bd;
 }
 
+.marcas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 100px 0;
+}
+.title-marcas{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff97bd;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px #f5aac5;
+}
+
+.cards-marcas{
+    justify-self: center;
+    text-align: center;
+    height: auto;
+    width: 200px;
+}
+
+.marcas img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid #ff97bd;
+    transition: transform 0.3s ease;
+}
+
+.marcas img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff97bd;
+}
+
+.marcas p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff97bd;
+    margin-top: 15px;
+}
+
+
 @media (max-width: 650px) {
     .navbar {
         /* Pasa de 3 columnas a 1 sola columna ocupando todo el ancho */
@@ -112,8 +165,6 @@ body {
         flex-wrap: wrap; /* Permite que los enlaces bajen de línea si la pantalla es muy estrecha */
         justify-content: center;
     }
-    @media (max-width: 650px) {
-    /* Ajustes anteriores de tu navbar van aquí... */
 
     .banner {
         height: 380px; /* Reducimos la altura para pantallas pequeñas */
@@ -133,5 +184,34 @@ body {
     .cont-banner p {
         font-size: 0.95rem;
     }
+
+    .marcas {
+        grid-template-columns: repeat(2, 1fr); /* Cambia de 4 a 2 columnas */
+        margin: 50px 0; /* Reduce los márgenes verticales superiores e inferiores */
+    }
+
+    .title-marcas {
+        font-size: 22px; /* Disminuye el tamaño del título */
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .cards-marcas {
+        height: auto; /* Permite que el contenido fluya verticalmente sin cortar el texto */
+        width: auto;
+    }
+
+    .marcas img {
+        width: 110px; /* Escala los logos a un tamaño proporcional para móviles */
+        height: 110px;
+        border-width: 2px;
+    }
+
+    .marcas p {
+        font-size: 16px;
+        margin-top: 10px;
+        margin: 3px 0 20px 0;
+    }
 }
-}
+
+
