@@ -102,7 +102,7 @@ body {
     text-shadow: 2px 2px 5px #ff97bd;
 }
 
-.marcas{
+.marcas-m{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 100px 0;
@@ -113,9 +113,20 @@ body {
     font-size: 30px;
     font-weight: 600;
     color: #ff97bd;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-top: 40px;
     text-shadow: 2px 2px 5px #f5aac5;
+    text-align: center;
+}
+.maquillaje{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff97bd;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 5px #f5aac5;
+    text-align: center;  
 }
 
 .cards-marcas{
@@ -125,7 +136,7 @@ body {
     width: 200px;
 }
 
-.marcas img{
+.marcas-m img{
     width: 140px;
     height: 140px;
     object-fit: cover;
@@ -134,12 +145,47 @@ body {
     transition: transform 0.3s ease;
 }
 
-.marcas img:hover{
+.marcas-m img:hover{
     transform: scale(1.1);
     box-shadow: 0 0 15px #ff97bd;
 }
 
-.marcas p{
+.marcas-m p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff97bd;
+    margin-top: 15px;
+}
+/*---*/
+
+.marcas-c{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 100px 0;
+}
+.capilares{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ff97bd;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 5px #f5aac5;
+    text-align: center;  
+}
+.marcas-c img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid #ff97bd;
+    transition: transform 0.3s ease;
+}
+.marcas-c img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ff97bd;
+}
+.marcas-c p{
     font-size: 20px;
     font-weight: 600;
     color: #ff97bd;
@@ -185,11 +231,14 @@ body {
         font-size: 0.95rem;
     }
 
-    .marcas {
+    .marcas-m {
         grid-template-columns: repeat(2, 1fr); /* Cambia de 4 a 2 columnas */
         margin: 50px 0; /* Reduce los márgenes verticales superiores e inferiores */
     }
-
+    .marcas-c {
+        grid-template-columns: repeat(2, 1fr); /* Cambia de 4 a 2 columnas */
+        margin: 50px 0; /* Reduce los márgenes verticales superiores e inferiores */
+    }
     .title-marcas {
         font-size: 22px; /* Disminuye el tamaño del título */
         margin-top: 20px;
@@ -201,13 +250,23 @@ body {
         width: auto;
     }
 
-    .marcas img {
+    .marcas-m img {
+        width: 110px; /* Escala los logos a un tamaño proporcional para móviles */
+        height: 110px;
+        border-width: 2px;
+    }
+    .marcas-c img {
         width: 110px; /* Escala los logos a un tamaño proporcional para móviles */
         height: 110px;
         border-width: 2px;
     }
 
-    .marcas p {
+    .marcas-m p {
+        font-size: 16px;
+        margin-top: 10px;
+        margin: 3px 0 20px 0;
+    }
+    .marcas-c p {
         font-size: 16px;
         margin-top: 10px;
         margin: 3px 0 20px 0;
