@@ -1,0 +1,72 @@
+<article class="card-producto">
+                    <img src="/img/Productos_atenea/SerumTinted.png" alt="Serum Tinted">
+                    <div class="info-producto">
+                        <span class="marca-tag">Atenea</span>
+                        <h3>Tinta de Maquillaje</h3>
+                        <p class="precio">$55.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img/productos_bloomshell/Corrector.png" alt="Corrector B.">
+                    <div class="info-producto">
+                        <span class="marca-tag">Bloomshell</span>
+                        <h3>Corrector de ojeras</h3>
+                        <p class="precio">$30.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img/productos_montoc/FijadorMaquillaje.png" alt="Fijador de Maquillaje">
+                    <div class="info-producto">
+                        <span class="marca-tag">Montoc</span>
+                        <h3>Fijador de Maquillaje</h3>
+                        <p class="precio">$34.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img/productos_anik/SerumBlush.png" alt="Serum Blush">
+                    <div class="info-producto">
+                        <span class="marca-tag">anik</span>
+                        <h3>Serum Blush</h3>
+                        <p class="precio">$28.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img/productos_clickhair/PerfumeMiel.png" alt="Perfume de miel">
+                    <div class="info-producto">
+                        <span class="marca-tag">Click Hair</span>
+                        <h3>Perfume Capilar de miel/h3>
+                        <p class="precio">$50.500</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img/productos_milagros/ShampooHerbal.png" alt="Shampoo Herbal">
+                    <div class="info-producto">
+                        <span class="marca-tag">Milagros</span>
+                        <h3>PShampoo Herbal</h3>
+                        <p class="precio">$35.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img//productos_kaba/ShampooCebolla.png" alt="Shampoo Cebolla">
+                    <div class="info-producto">
+                        <span class="marca-tag">Kaba</span>
+                        <h3>Shampoo de Cebolla</h3>
+                        <p class="precio">$40.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
+                <article class="card-producto">
+                    <img src="/img/productos_ole/StickCapilar.png" alt="Stick capilar">
+                    <div class="info-producto">
+                        <span class="marca-tag">Olé</span>
+                        <h3>Stick Capilar</h3>
+                        <p class="precio">$36.000</p>
+                        <button class="btn-comprar">Añadir al carrito</button>
+                    </div>
+                </article>
