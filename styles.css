@@ -93,7 +93,7 @@ footer {
     object-fit: cover;
 }
 
-.footer-logo h3 {
+.footer-logo h2 {
     color: #ff97bd;
     font-size: 20px;
     font-weight: 600;
@@ -105,8 +105,12 @@ footer h3 {
     font-weight: 600;
     margin-bottom: 20px;
 }
-
-
+.contactanos{
+    color: #ff97bd;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px; 
+}
 .footer-navegacion ul, .footer-redes ul {
     display: flex;
     flex-direction: column;
@@ -241,7 +245,7 @@ footer h3 {
     box-shadow: 0 0 15px #ff97bd;
 }
 
-.marcas-m p{
+.marcas-m h3{
     font-size: 20px;
     font-weight: 600;
     color: #ff97bd;
@@ -276,7 +280,7 @@ footer h3 {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ff97bd;
 }
-.marcas-c p{
+.marcas-c h3{
     font-size: 20px;
     font-weight: 600;
     color: #ff97bd;
