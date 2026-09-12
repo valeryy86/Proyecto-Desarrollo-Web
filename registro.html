@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo-Sky V Cosmetic</title>
+    <title>Sky V Cosmetic</title>
     <link rel = "stylesheet" href = "styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +11,13 @@
 </head>
 <body>
     <header>
-        <nav class="navbar"> 
+    <nav class="navbar"> 
             <div class="logo">
                 <img src="/img/logoSkyV.jpeg" alt="Logo SkyV Cosmetics">
             </div>
             <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
             &#9776;
             </button>
-
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="catalogo.html">Catálogo</a></li>
@@ -26,26 +25,67 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="seccion-catalogo">
-            <h1 class="titulo-catalogo">Nuestro Catálogo</h1>
+        <section class="formulario-registro">
+            <h1>Formulario de Registro</h1>
+            <p>Completa los siguientes datos para registrarte.</p>
+        <form id="form-registro" novalidate>
 
-            <div class="contenedor-filtros">
-                <button class="btn-filtro activo" data-marca="todos">Todos</button>
-                <button class="btn-filtro" data-marca="atenea">Atenea</button>
-                <button class="btn-filtro" data-marca="bloomshell">Bloomshell</button>
-                <button class="btn-filtro" data-marca="anik">Ani-k</button>
-                <button class="btn-filtro" data-marca="montoc">Montoc</button>
-                <button class="btn-filtro" data-marca="click">Click Hair</button>
-                <button class="btn-filtro" data-marca="milagros">Milagros</button>
-                <button class="btn-filtro" data-marca="ole">Olé</button>
-                <button class="btn-filtro" data-marca="kaba">Kaba</button>
+            <div>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre">
+                <span class="mensaje-error" id="error-nombre"></span>
             </div>
 
-            <div class="productos-grid" id="productos-grid">
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo">
+                <span class="mensaje-error" id="error-correo"></span>
             </div>
-        </section>    
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <span class="mensaje-error" id="error-telefono"></span>
+            </div>
+
+            <div>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+                <span class="mensaje-error" id="error-fecha"></span>
+            </div>
+
+            <div>
+                <label for="tipo">Tipo de inscripción:</label>
+                <select id="tipo" name="tipo">
+                    <option value="">Seleccione una opción</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="visitante">Visitante</option>
+                </select>
+                <span class="mensaje-error" id="error-tipo"></span>
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriba aquí su mensaje"></textarea>
+            </div>
+
+            <div class="terminos">
+                <input type="checkbox" id="terminos" name="terminos">
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+            <span class="mensaje-error" id="error-terminos"></span>
+
+            <button type="submit">Registrarse</button>
+            <button type="reset">Limpiar</button>
+        <div id="mensaje-exito" class="mensaje-exito"></div>
+        
+        </form>
+        </section>
     </main>
+
     <footer>
         <div class="footer-logo">
             <img src="/img/logoSkyV.jpeg" alt="Logo de Sky V Cosmetics" class="footer-imagen">
@@ -88,7 +128,6 @@
             </p>
         </div>
     </footer>
-    <script src="main.js"></script>
-    <script src="catalogo.js"></script>
+<script src="registro.js"></script>
 </body>
 </html>
