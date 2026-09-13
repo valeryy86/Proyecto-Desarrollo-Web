@@ -531,11 +531,11 @@ footer h3 {
     }
 
     .hamburger {
-        display: block; /* Se muestra únicamente en móviles */
+        display: block; 
     }
 
     .nav-links {
-        display: none; /* Se oculta por defecto en móviles */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -549,13 +549,12 @@ footer h3 {
         border-radius: 0 0 10px 10px;
     }
 
-    /* Clase que activa JavaScript para desplegar el menú */
     .nav-links.active {
         display: flex;
     }
     
     footer {
-        grid-template-columns: 1fr; /* Pasa de 4 columnas a 1 sola en celulares */
+        grid-template-columns: 1fr; 
         gap: 30px;
         padding: 30px 20px 20px;
         text-align: center;
@@ -566,18 +565,18 @@ footer h3 {
     }
 
     .banner {
-        height: 380px; /* Reducimos la altura para pantallas pequeñas */
+        height: 380px; 
     }
 
     .cont-banner {
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%); /* Centra el contenido en el medio exacto del celular */
-        width: 90%; /* Aprovecha casi todo el ancho disponible */
+        transform: translate(-50%, -50%); 
+        width: 90%; 
     }
 
     .cont-banner h1 {
-        font-size: 1.8rem; /* Tamaño de título cómodo para pantallas pequeñas */
+        font-size: 1.8rem; 
     }
 
     .cont-banner p {
@@ -585,31 +584,31 @@ footer h3 {
     }
 
     .marcas-m {
-        grid-template-columns: repeat(2, 1fr); /* Cambia de 4 a 2 columnas */
-        margin: 50px 0; /* Reduce los márgenes verticales superiores e inferiores */
+        grid-template-columns: repeat(2, 1fr); 
+        margin: 50px 0; 
     }
     .marcas-c {
-        grid-template-columns: repeat(2, 1fr); /* Cambia de 4 a 2 columnas */
-        margin: 50px 0; /* Reduce los márgenes verticales superiores e inferiores */
+        grid-template-columns: repeat(2, 1fr); 
+        margin: 50px 0; 
     }
     .title-marcas {
-        font-size: 22px; /* Disminuye el tamaño del título */
+        font-size: 22px; 
         margin-top: 20px;
         margin-bottom: 30px;
     }
 
     .cards-marcas {
-        height: auto; /* Permite que el contenido fluya verticalmente sin cortar el texto */
+        height: auto; 
         width: auto;
     }
 
     .marcas-m img {
-        width: 110px; /* Escala los logos a un tamaño proporcional para móviles */
+        width: 110px; 
         height: 110px;
         border-width: 2px;
     }
     .marcas-c img {
-        width: 110px; /* Escala los logos a un tamaño proporcional para móviles */
+        width: 110px; 
         height: 110px;
         border-width: 2px;
     }

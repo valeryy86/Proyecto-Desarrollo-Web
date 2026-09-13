@@ -1,4 +1,3 @@
-// 1. Arreglo de objetos de productos (Base de datos)
 const productos = [
     {
         id: 1,
@@ -58,11 +57,9 @@ const productos = [
     }
 ];
 
-// 2. Selección de elementos del DOM
 const contenedorGrid = document.getElementById('productos-grid');
 const botonesFiltro = document.querySelectorAll('.btn-filtro');
 
-// 3. Función para pintar las tarjetas en el HTML
 function renderizarProductos(lista) {
     contenedorGrid.innerHTML = '';
 
@@ -87,9 +84,7 @@ function renderizarProductos(lista) {
     });
 }
 
-// 4. Función de filtrado por marca
 function filtrarPorMarca(marcaSeleccionada) {
-    // Actualizar clase activa en los botones
     botonesFiltro.forEach(boton => {
         if (boton.dataset.marca === marcaSeleccionada) {
             boton.classList.add('activo');
@@ -98,7 +93,6 @@ function filtrarPorMarca(marcaSeleccionada) {
         }
     });
 
-    // Filtrar la lista
     if (marcaSeleccionada === 'todos' || !marcaSeleccionada) {
         renderizarProductos(productos);
     } else {
@@ -107,7 +101,6 @@ function filtrarPorMarca(marcaSeleccionada) {
     }
 }
 
-// 5. Asignar eventos de clic a los botones
 botonesFiltro.forEach(boton => {
     boton.addEventListener('click', () => {
         const marca = boton.dataset.marca;
@@ -115,7 +108,6 @@ botonesFiltro.forEach(boton => {
     });
 });
 
-// 6. Leer parámetros URL al cargar la página (URLSearchParams)
 document.addEventListener('DOMContentLoaded', () => {
     const parametros = new URLSearchParams(window.location.search);
     const marcaURL = parametros.get('marca');
