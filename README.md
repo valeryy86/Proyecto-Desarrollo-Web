@@ -7,3 +7,26 @@ La página web cuenta con las marcas que manejamos y los productos de ellas (en 
 
 ## Link de Vercel:
 https://proyecto-desarrollo-web-alpha.vercel.app
+
+## Capturas de pantalla:
+
+### En Movil:
+
+![Captura 1 en movil](/CapturasParaReadme/capMovil1.png)
+![Captura 2 en movil](/CapturasParaReadme/capMovil2.png)
+![Captura 3 en movil](/CapturasParaReadme/capMovil3.png)
+![Captura 4 en movil](/CapturasParaReadme/capMovil4.png)
+![Captura 5 en movil](/CapturasParaReadme/capMovil5.png)
+![Captura 6 en movil](/CapturasParaReadme/capMovil6.png)
+
+### En Escritorio:
+
+![Captura 1 en escritorio](/CapturasParaReadme/capEscritorio1.png)
+![Captura 2 en escritorio](/CapturasParaReadme/capEscritorio2.png)
+![Captura 3 en escritorio](/CapturasParaReadme/capEscritorio3.png)
+
+
+
+
+
+
