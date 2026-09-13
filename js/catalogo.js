@@ -30,7 +30,7 @@ const productos = [
     {
         id: 5,
         nombre: "Perfume Capilar de miel",
-        marca: "click",
+        marca: "clickhair",
         precio: "$50.500",
         imagen: "/img/productos_clickhair/PerfumeMiel.png"
     },
